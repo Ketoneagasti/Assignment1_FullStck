@@ -1,0 +1,10 @@
+<h2>Question 5: Two-Way Data Binding Example</h2>
+
+<form>
+  <label for="name">Name: </label>
+  <input type="text" id="name" [(ngModel)]="name" name="name" required>
+</form>
+
+<h3>{{ name }}</h3>
+
+<button (click)="changeName()">Display Name</button>
